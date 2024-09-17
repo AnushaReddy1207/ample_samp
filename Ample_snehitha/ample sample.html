@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head><style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    background-position: center;
+    background-size: center;
+}
+.navbar{
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 160px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+}
+li a:hover{
+    background: white;
+    transition: 0.6s;
+}
+.navbar a:hover{
+    color: black;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    transition: width 2s ease-in-out 1s;
+}
+
+.content h1{
+    margin-top: 80px;
+    font-size: 90px;
+    font-weight: 800;
+ background:linear-gradient(to right,red,pink,yellow);
+           color:transparent;
+           -webkit-background-clip:text; 
+
+    }
+.content:hover {
+transform: translateY(-60%) scale(1.5);
+}
+
+h2{
+color: pink;
+font-family: arial;
+font-size: 60px;
+font-weight: bold;
+text-align: center;
+margin-top: 20px;
+}
+#tech{
+color: white;
+font-family: Italics;
+margin-left: 20px;
+margin-top:20px;
+}
+#nontech{
+color: white;
+font-family: Italics;
+margin-left: 20px;
+margin-top:50px;
+}
+
+button{
+background-color:skyblue;
+padding: 10px 20px;
+font-size: 16px;
+font-family: Italics;
+cursor: pointer;
+margin-top: 10px;
+margin-left: 50px;
+}
+
+#meCon{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+img{
+border:5px solid gray;
+margin-top:20px;
+}
+
+.banner video{
+    position: absolute;
+    right: 1500;
+    bottom: 1500;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .banner video{
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+            </head>
+    <body>
+        <div class="banner">
+            <video autoplay loop muted plays-inline>
+                <source src="dishi bangaram.mp4" type="video/mp4">
+            </video>
+            <div class="navbar">
+                <img class="logo" src="svcelogo.png">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="content">
+		<h1>AMPLE 2K23</h1>
+	    </div>            
+        </div>
+  <h2>EVENTS</h2>
+
+  <div id="tech">TECHNICAL EVENTS</div>
+<ul>
+<li><button id="disBut">JAM</button>
+<div id="meCon">
+<img id="image" src="jjamm.jpg" alt="image" style="display:none;" width="400" >
+</div></li>
+<li><button id="disBut1">QUIZ</button>
+<div id="meCon">
+<video id="video1" controls style="display:none;" width="400">
+<source src="gqqq.mp4" type="video/mp4"></video>
+</div></li>
+<li><button id="disBut2">PPT</button>
+<div id="meCon">
+<img id="image2" src="jjamm.jpg" alt="image" style="display:none;" width="400">
+</div></li>
+</ul>
+
+
+<div id="nontech">NON-TECHNICAL EVENTS</div>
+<ul>
+<li><button id="disBut3">MUSIC</button>
+<div id="meCon">
+<img id="image3" src="jjamm.jpg" alt="image" style="display:none;" width="400">
+</div></li>
+<li><button id="disBut4">DANCE</button>
+<div id="meCon">
+<img id="image4" src="jjamm.jpg" alt="image" style="display:none;" width="400">
+</div></li>
+<li><button id="disBut5">GAMES</button>
+<div id="meCon">
+<video id="video5" controls style="display:none;" width="400">
+<source src="games.mp4" type="video/mp4"></video>
+</div></li>
+</ul>
+
+
+
+<script src="script.js"></script>
+   </body>
+</html>
+
+
+
+
+
+
+
